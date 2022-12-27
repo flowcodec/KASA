@@ -1,0 +1,89 @@
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    max-width:  1240px;
+}
+
+.blockArrow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+
+.indexArrows{
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 415px;
+    z-index: 2;
+}
+
+.blockImage{
+    height: 415px;
+    position: absolute;
+    z-index: 1;
+    max-width: 1240px;
+    width: 100%;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.blockImage--off{
+    display: none;
+}
+
+.carrouselImage{
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    object-fit: cover;
+}
+
+.index {
+    color: white;
+    z-index: 2;
+    transform: translateY(160px);
+}
+
+@media screen and (max-width:768px){
+.carrousel{
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.blockImage{
+    width: 100%;
+    height: 255px;
+    padding: 0px 27px;
+}
+
+.carrouselImage{
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.blockArrow {
+    height: 20px;
+    padding: 0px 35px;
+}
+
+.costumer{
+    padding: 0px;
+}
+.index{
+    display: none;
+}
+}
